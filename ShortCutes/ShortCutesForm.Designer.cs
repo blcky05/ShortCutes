@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShortCutes));
             this.label5 = new System.Windows.Forms.Label();
-            this.DesktopCheck = new System.Windows.Forms.CheckBox();
             this.GameExplorerBtn = new System.Windows.Forms.Button();
             this.EmuExplorerBtn = new System.Windows.Forms.Button();
             this.ShortCuteNameTxB = new System.Windows.Forms.TextBox();
@@ -51,12 +50,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.miniBtn = new System.Windows.Forms.Button();
             this.closeBtn = new System.Windows.Forms.Button();
+            this.OpenFolder = new System.Windows.Forms.Button();
             this.ICOurl = new System.Windows.Forms.TextBox();
             this.ICOpic = new System.Windows.Forms.PictureBox();
             this.ClearSCSelected = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.forceWindowToNotWait = new System.Windows.Forms.CheckBox();
-            this.OpenFolder = new System.Windows.Forms.Button();
+            this.armoryCrateLauncher = new System.Windows.Forms.CheckBox();
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.panelBorderStyle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ICOpic)).BeginInit();
@@ -66,28 +66,13 @@
             // 
             this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(443, 42);
+            this.label5.Location = new System.Drawing.Point(443, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(303, 35);
             this.label5.TabIndex = 27;
             this.label5.Text = "Select an  image to set as the shortcut ICON\r\nDouble click to crop selected image" +
     "";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DesktopCheck
-            // 
-            this.DesktopCheck.AutoSize = true;
-            this.DesktopCheck.Checked = true;
-            this.DesktopCheck.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.DesktopCheck.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F);
-            this.DesktopCheck.ForeColor = System.Drawing.Color.White;
-            this.DesktopCheck.Location = new System.Drawing.Point(12, 311);
-            this.DesktopCheck.Name = "DesktopCheck";
-            this.DesktopCheck.Size = new System.Drawing.Size(113, 20);
-            this.DesktopCheck.TabIndex = 5;
-            this.DesktopCheck.Text = "Desktop Shortcut";
-            this.DesktopCheck.UseVisualStyleBackColor = true;
-            this.DesktopCheck.CheckedChanged += new System.EventHandler(this.Shortcutbox_Focus);
             // 
             // GameExplorerBtn
             // 
@@ -97,7 +82,7 @@
             this.GameExplorerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GameExplorerBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Bold);
             this.GameExplorerBtn.ForeColor = System.Drawing.Color.White;
-            this.GameExplorerBtn.Location = new System.Drawing.Point(302, 261);
+            this.GameExplorerBtn.Location = new System.Drawing.Point(302, 265);
             this.GameExplorerBtn.Name = "GameExplorerBtn";
             this.GameExplorerBtn.Size = new System.Drawing.Size(119, 35);
             this.GameExplorerBtn.TabIndex = 3;
@@ -113,7 +98,7 @@
             this.EmuExplorerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EmuExplorerBtn.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Bold);
             this.EmuExplorerBtn.ForeColor = System.Drawing.Color.White;
-            this.EmuExplorerBtn.Location = new System.Drawing.Point(302, 192);
+            this.EmuExplorerBtn.Location = new System.Drawing.Point(302, 196);
             this.EmuExplorerBtn.Name = "EmuExplorerBtn";
             this.EmuExplorerBtn.Size = new System.Drawing.Size(119, 35);
             this.EmuExplorerBtn.TabIndex = 2;
@@ -127,7 +112,7 @@
             this.ShortCuteNameTxB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ShortCuteNameTxB.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 12F);
             this.ShortCuteNameTxB.ForeColor = System.Drawing.Color.White;
-            this.ShortCuteNameTxB.Location = new System.Drawing.Point(12, 130);
+            this.ShortCuteNameTxB.Location = new System.Drawing.Point(14, 133);
             this.ShortCuteNameTxB.MaxLength = 50;
             this.ShortCuteNameTxB.Multiline = true;
             this.ShortCuteNameTxB.Name = "ShortCuteNameTxB";
@@ -142,7 +127,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(14, 111);
+            this.label4.Location = new System.Drawing.Point(14, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 16);
             this.label4.TabIndex = 25;
@@ -164,7 +149,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 242);
+            this.label2.Location = new System.Drawing.Point(14, 246);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 16);
             this.label2.TabIndex = 23;
@@ -175,7 +160,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift SemiBold SemiConden", 9.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 172);
+            this.label1.Location = new System.Drawing.Point(14, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 16);
             this.label1.TabIndex = 20;
@@ -202,7 +187,7 @@
             this.EmuDirTxB.Cursor = System.Windows.Forms.Cursors.Default;
             this.EmuDirTxB.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 9F);
             this.EmuDirTxB.ForeColor = System.Drawing.Color.White;
-            this.EmuDirTxB.Location = new System.Drawing.Point(14, 192);
+            this.EmuDirTxB.Location = new System.Drawing.Point(14, 196);
             this.EmuDirTxB.Multiline = true;
             this.EmuDirTxB.Name = "EmuDirTxB";
             this.EmuDirTxB.ReadOnly = true;
@@ -220,7 +205,7 @@
             this.GameDirTxB.Cursor = System.Windows.Forms.Cursors.Default;
             this.GameDirTxB.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 9F);
             this.GameDirTxB.ForeColor = System.Drawing.Color.White;
-            this.GameDirTxB.Location = new System.Drawing.Point(14, 261);
+            this.GameDirTxB.Location = new System.Drawing.Point(14, 265);
             this.GameDirTxB.Multiline = true;
             this.GameDirTxB.Name = "GameDirTxB";
             this.GameDirTxB.ReadOnly = true;
@@ -238,7 +223,7 @@
             this.createshortbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createshortbtn.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 14.25F, System.Drawing.FontStyle.Bold);
             this.createshortbtn.ForeColor = System.Drawing.Color.White;
-            this.createshortbtn.Location = new System.Drawing.Point(12, 337);
+            this.createshortbtn.Location = new System.Drawing.Point(12, 348);
             this.createshortbtn.Name = "createshortbtn";
             this.createshortbtn.Size = new System.Drawing.Size(409, 65);
             this.createshortbtn.TabIndex = 4;
@@ -372,13 +357,32 @@
             this.closeBtn.UseVisualStyleBackColor = false;
             this.closeBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
+            // OpenFolder
+            // 
+            this.OpenFolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(18)))), ((int)(((byte)(23)))));
+            this.OpenFolder.FlatAppearance.BorderSize = 0;
+            this.OpenFolder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(56)))), ((int)(((byte)(74)))));
+            this.OpenFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OpenFolder.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OpenFolder.ForeColor = System.Drawing.Color.White;
+            this.OpenFolder.Location = new System.Drawing.Point(302, 314);
+            this.OpenFolder.Margin = new System.Windows.Forms.Padding(0);
+            this.OpenFolder.Name = "OpenFolder";
+            this.OpenFolder.Size = new System.Drawing.Size(119, 21);
+            this.OpenFolder.TabIndex = 32;
+            this.OpenFolder.TabStop = false;
+            this.OpenFolder.Text = "Open ShortCutes Folder";
+            this.OpenFolder.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.OpenFolder.UseVisualStyleBackColor = false;
+            this.OpenFolder.Click += new System.EventHandler(this.OpenFolder_Click);
+            // 
             // ICOurl
             // 
             this.ICOurl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ICOurl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ICOurl.Font = new System.Drawing.Font("Bahnschrift Light SemiCondensed", 11F);
             this.ICOurl.ForeColor = System.Drawing.Color.White;
-            this.ICOurl.Location = new System.Drawing.Point(446, 382);
+            this.ICOurl.Location = new System.Drawing.Point(446, 389);
             this.ICOurl.Multiline = true;
             this.ICOurl.Name = "ICOurl";
             this.ICOurl.Size = new System.Drawing.Size(300, 22);
@@ -397,7 +401,7 @@
             this.ICOpic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ICOpic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ICOpic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ICOpic.Location = new System.Drawing.Point(446, 76);
+            this.ICOpic.Location = new System.Drawing.Point(446, 83);
             this.ICOpic.Name = "ICOpic";
             this.ICOpic.Size = new System.Drawing.Size(300, 300);
             this.ICOpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -414,7 +418,7 @@
             this.ClearSCSelected.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearSCSelected.Font = new System.Drawing.Font("Bahnschrift Condensed", 11.25F, System.Drawing.FontStyle.Bold);
             this.ClearSCSelected.ForeColor = System.Drawing.Color.White;
-            this.ClearSCSelected.Location = new System.Drawing.Point(302, 125);
+            this.ClearSCSelected.Location = new System.Drawing.Point(302, 123);
             this.ClearSCSelected.Name = "ClearSCSelected";
             this.ClearSCSelected.Size = new System.Drawing.Size(119, 35);
             this.ClearSCSelected.TabIndex = 31;
@@ -434,33 +438,28 @@
             // forceWindowToNotWait
             // 
             this.forceWindowToNotWait.AutoSize = true;
-            this.forceWindowToNotWait.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9.75F);
+            this.forceWindowToNotWait.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F);
             this.forceWindowToNotWait.ForeColor = System.Drawing.Color.White;
-            this.forceWindowToNotWait.Location = new System.Drawing.Point(131, 311);
+            this.forceWindowToNotWait.Location = new System.Drawing.Point(12, 315);
             this.forceWindowToNotWait.Name = "forceWindowToNotWait";
-            this.forceWindowToNotWait.Size = new System.Drawing.Size(144, 20);
+            this.forceWindowToNotWait.Size = new System.Drawing.Size(139, 18);
             this.forceWindowToNotWait.TabIndex = 33;
             this.forceWindowToNotWait.Text = "Force launcher to close";
             this.toolTip.SetToolTip(this.forceWindowToNotWait, "Forces ShortCute launcher to close when the emulator exe has already opened");
             this.forceWindowToNotWait.UseVisualStyleBackColor = true;
             // 
-            // OpenFolder
+            // armoryCrateLauncher
             // 
-            this.OpenFolder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(18)))), ((int)(((byte)(23)))));
-            this.OpenFolder.FlatAppearance.BorderSize = 0;
-            this.OpenFolder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(56)))), ((int)(((byte)(74)))));
-            this.OpenFolder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.OpenFolder.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OpenFolder.ForeColor = System.Drawing.Color.White;
-            this.OpenFolder.Location = new System.Drawing.Point(302, 306);
-            this.OpenFolder.Margin = new System.Windows.Forms.Padding(0);
-            this.OpenFolder.Name = "OpenFolder";
-            this.OpenFolder.Size = new System.Drawing.Size(119, 23);
-            this.OpenFolder.TabIndex = 32;
-            this.OpenFolder.TabStop = false;
-            this.OpenFolder.Text = "Open ShortCutes Folder";
-            this.OpenFolder.UseVisualStyleBackColor = false;
-            this.OpenFolder.Click += new System.EventHandler(this.OpenFolder_Click);
+            this.armoryCrateLauncher.AutoSize = true;
+            this.armoryCrateLauncher.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 9F);
+            this.armoryCrateLauncher.ForeColor = System.Drawing.Color.White;
+            this.armoryCrateLauncher.Location = new System.Drawing.Point(157, 315);
+            this.armoryCrateLauncher.Name = "armoryCrateLauncher";
+            this.armoryCrateLauncher.Size = new System.Drawing.Size(135, 18);
+            this.armoryCrateLauncher.TabIndex = 34;
+            this.armoryCrateLauncher.Text = "Armory Crate launcher";
+            this.toolTip.SetToolTip(this.armoryCrateLauncher, "Enables compatibility with Armory Crate game profiles");
+            this.armoryCrateLauncher.UseVisualStyleBackColor = true;
             // 
             // Timer
             // 
@@ -472,15 +471,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(28)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(760, 415);
+            this.ClientSize = new System.Drawing.Size(760, 420);
             this.ControlBox = false;
-            this.Controls.Add(this.forceWindowToNotWait);
+            this.Controls.Add(this.armoryCrateLauncher);
             this.Controls.Add(this.OpenFolder);
+            this.Controls.Add(this.forceWindowToNotWait);
             this.Controls.Add(this.ClearSCSelected);
             this.Controls.Add(this.ICOurl);
             this.Controls.Add(this.panelBorderStyle);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.DesktopCheck);
             this.Controls.Add(this.ICOpic);
             this.Controls.Add(this.GameExplorerBtn);
             this.Controls.Add(this.EmuExplorerBtn);
@@ -513,7 +512,6 @@
         #endregion
 
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox DesktopCheck;
         private System.Windows.Forms.PictureBox ICOpic;
         private System.Windows.Forms.Button GameExplorerBtn;
         private System.Windows.Forms.Button EmuExplorerBtn;
@@ -540,6 +538,7 @@
         private System.Windows.Forms.Button OpenFolder;
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.CheckBox forceWindowToNotWait;
+        private System.Windows.Forms.CheckBox armoryCrateLauncher;
     }
 }
 
