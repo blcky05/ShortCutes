@@ -71,8 +71,6 @@ https://user-images.githubusercontent.com/72423267/140080768-30114c81-48d2-4dd3-
 https://user-images.githubusercontent.com/72423267/140080931-d30cc844-6427-4226-af6d-3a1999faf8f6.mp4
 
 ## **Armoury Crate**
-You can use ShortCutes to make your emulated games not only startable from Armoury Crate on your ROG Ally, but even to make it compatible with the launcher's active game detection and game profiles. Follwing these steps will allow you to define game-specific profiles including TDP or controller settings, and further the launcher will automatically detect that your game is running and re-open Armoury Crate after exit.
-
 You can use ShortCutes to add your emulated games to the ROG Ally's Armoury Crate launcher. This allows you to not only launch your games from Armoury Crate but also to take advantage of its active game detection and custom game profiles.
 
 After following the instructions, you'll be able to:
